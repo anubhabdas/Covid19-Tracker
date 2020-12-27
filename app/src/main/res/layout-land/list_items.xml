@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/belowContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:layout_marginTop="0dp"
+    android:layout_below="@id/topContainer"
+    android:orientation="vertical">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+        <TableRow android:padding="5dp">
+            <TextView
+                android:id="@+id/stateTv"
+                android:textAlignment="viewStart"
+                android:gravity="start"
+                android:layout_weight="1"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:fillViewport="true">
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" >
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/confirmedTv"
+                            android:layout_weight="1"
+                            android:gravity="start"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:textAllCaps="true"
+                            android:textColor="@color/dark_red"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/activeTv"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            android:textAllCaps="true"
+                            android:textColor="@color/dark_yellow"
+                            android:textStyle="bold"
+                            android:gravity="start" />
+                        <TextView
+                            android:id="@+id/recoveredTv"
+                            android:layout_weight="1"
+                            android:gravity="start"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:textAllCaps="true"
+                            android:textColor="@color/dark_green"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/deceasedTv"
+                            android:gravity="start"
+                            android:layout_weight="1"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:textAllCaps="true"
+                            android:textColor="@color/light_grey"
+                            android:textStyle="bold" />
+                    </TableRow>
+                </TableLayout>
+
+            </HorizontalScrollView>
+
+        </TableRow>
+    </TableLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:color/white"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"/>
+</LinearLayout>
